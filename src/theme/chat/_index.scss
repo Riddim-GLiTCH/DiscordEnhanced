@@ -1,2 +1,82 @@
 // This will be used for chat section.
 // Examples being: Messages, chatbox, typing bar, new/old message bars, ect...
+
+// Messages Slide into Chat by Lonk
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.message-2CShn3 {
+  animation: slide-up 0.4s ease;
+}
+
+// Removes Chatbox from channel that don't allow you to communicate - Snippet by DoggyBootsy
+.channelTextAreaDisabled-1p2fQv, .channelTextAreaDisabled-1p2fQv > .scrollableContainer-15eg7h{
+    animation: nochat .000001ms forwards;
+  }
+  @keyframes nochat{
+    to{height: 0}
+  }
+  /* Removes Follow banner on bottom of channels */
+  .wrapper-2SplAX {display: none;}
+
+
+// Embed touchup
+:root {
+    --embed-border-radius: 8px;
+    --embed-line-width: 256px;
+  }
+  .embed-hKpSrO {
+      border-radius: var(--embed-border-radius);
+  }
+  .embed-hKpSrO code {
+      background: var(--background-secondary);
+  }
+  .embedFull-1HGV2S {
+      border-left: calc(4px + var(--embed-line-width)) solid var(--background-accent);
+      background: var(--background-secondary);
+  }
+  .grid-1aWVsE {
+      position: relative;
+      margin-left: calc( -1 * var(--embed-line-width));
+      z-index: 1;
+  }
+  .embedFull-1HGV2S::after, .embedFull-1HGV2S::before {
+      content: "";
+      height: 100%;
+      width: var(--embed-line-width);
+      position: absolute;
+      top: 0;
+      left: calc(-1 * var(--embed-line-width));
+  }
+  .embedFull-1HGV2S::after {
+      background: linear-gradient(to right, transparent, var(--background-secondary));
+  }
+  .embedFull-1HGV2S::before {
+      background: var(--background-secondary);
+      opacity: .8;
+  }
+
+// Custom ChannelText Area message by Skamt
+.placeholder-1rCBhr {
+    width: min-content;
+    height:.7rem;
+    bottom:0;
+    display:flex;
+    gap:5px;
+    white-space: break-spaces;
+    word-spacing:150px;
+    align-items:flex-end;
+}
+
+.placeholder-1rCBhr:before{
+    white-space:nowrap;
+    content:"Send a message to ";
+    word-spacing:initial;
+}

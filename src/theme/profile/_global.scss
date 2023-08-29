@@ -1,0 +1,42 @@
+// Re-round Spotify Status Images - Snippet by Overimagine
+.assetsLargeImageSpotify-17ME3M{border-radius:8px;}
+.largeImage-2EIggm{border-radius:4px !important;}
+
+// Readd @ for Pomelo Accounts
+.userTagUsernameBase-267ALn:not(.username-3JLfHz):first-child::before, .discriminator-hnHkyt:not(.username-3JLfHz):first-child::before,
+.quickswitcher-pKcM9U .result-u66Ywh:not(.result-u66Ywh[aria-label*="#"]) .name-3qeTY- .username-wzYIu4::before {
+    content: "@";
+}
+.userTagUsernameBase-267ALn, .discriminator-hnHkyt, .discrimBase-v65kTs {
+    color: var(--header-secondary);
+}
+
+// Show full Bios - Snippet by Lumap
+[class*=userPopoutOverlayBackground-] [class*=lineClamp2Plus-],
+[class*=userProfileModalOverlayBackground-] [class*=lineClamp2Plus-]{
+  -webkit-line-clamp: 190 !important;
+}
+
+// Lonks Username background snippet, fixed by ShadowDevilsAvenged
+.headerText-2z4IhQ > span::before {
+  content: ''; 
+  width: calc(100% + 7px); 
+  height: 100%;
+  border-radius: 5px;
+  background-color: currentColor; 
+  opacity: 0.3; 
+  position: absolute; 
+  margin-top: 0px; 
+  z-index: -1;
+  margin-left: -3px;
+}
+.headerText-2z4IhQ > span {
+  margin-left: 3px;
+}
+.headerText-2z4IhQ > [role*="button"]:not(.username-h_Y3Us)::before {
+  content: '';
+  width: calc(18px + 7px);
+  background-color: currentColor;
+  opacity: 0.3;
+  margin-left: 2px;
+}

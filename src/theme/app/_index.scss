@@ -1,3 +1,114 @@
 // This will be used for parts of Discord that aren't necessarily part of a section,
 // but rather the app as a whole.
 // Examples being: Tooltips, toolbar, scrollbars, ect...
+
+// Water Mark font
+@import url(https://discord-theme.pages.dev/assets/snippets/discord-font.css);
+// Enhanced Toggle design by DaBluLite
+@import url(//dablulite.github.io/css-snippets/TogglesV2/import.css);
+// Horizontal server list by Gibbu
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+// Enhanced User Area by DaBluLite
+@import url(https://dablulite.github.io/css-snippets/UserReimagined/import.css);
+// Nitro Themes Hotfix by DaBluLite
+@import url(//dablulite.github.io/css-snippets/NitroThemesFix/import.css);
+// Touchup by Axo
+@import url("https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Imports/Touchup.css");
+// Fluent Icon Pack by Gibbu
+@import url('https://discordstyles.github.io/Fluent/Icons.css');
+// Dark mode hard to see emoji fix by Asportnoy
+@import url("https://app.staticsave.com/asportnoy/emoji-border.css");
+// 2016 statuses by Zuzumi
+@import url("https://zuzumi-f.github.io/classic-discord-status/2016-status.css");
+// Iconify the Search bar - Snippet by Kaestral
+.iconContainer-1RqWJj, .icon-18rqoe {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .searchBar-jGtisZ {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background: none;
+  }
+
+  .focused-1xh-wG .searchBar-jGtisZ, .open-1F8u2c .searchBar-jGtisZ, .searchBar-jGtisZ:hover {
+    width: 150px;
+    height: 25px;
+    background-color: var(--background-tertiary);
+  }
+
+// Hide the stupid help button!
+.anchor-1X4H4q[href="https://support.discord.com"] {
+    display: none;
+}
+
+// Timestamp Icons by DracoClaw
+.timestamp-6-ptG3 {
+	  border-radius: 7px; 
+	  padding: 2.5px;
+	
+	}
+	
+	.timestamp-6-ptG3::before {
+	  content: url("data:image/svg+xml,%3Csvg width='12px' height='12px' role='img' fill='white' viewBox='0 0 520 520' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EDiscord%3C/title%3E%3Cpath d='M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z'/%3E%3C/svg%3E");
+	    margin: 4px;
+	    position: relative;
+	    top: 1.5px;
+	}
+	
+	.theme-light .timestamp-6-ptG3::before {
+	  filter: invert(87%); 
+	}
+
+
+// Pin home button by DoggyBootsy
+[aria-label="Boost this server"] {display: none;}
+
+
+.guilds-2JjMmN .tree-3agP2X:focus {
+  outline-color: transparent;
+}
+.guilds-2JjMmN .scroller-3X7KbA {
+  contain: unset;
+  margin-top: 56px;
+}
+.guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS {
+  position: fixed;
+  transform: translatey( -150% );
+}
+
+// consistent top bar
+.chat-2ZfjoI:has(.container-2o3qEW) .container-ZMc96U,
+.chat-2ZfjoI:has(.membersWrap-3NUR2t) .container-ZMc96U{
+    max-width: calc(100% - 240px);
+    position: absolute;
+}
+.chat-2ZfjoI:has(.profilePanel-2VBkh8) .container-ZMc96U {
+    max-width: calc(100% - 340px);
+    position: absolute;
+}
+.chat-2ZfjoI:has(.searchResultsWrap-5RVOkx) .container-ZMc96U {
+    max-width: calc(100% - 418px);
+    position: absolute;
+}
+/*  */
+.chat-2ZfjoI:has(.container-2o3qEW) .chatContent-3KubbW,
+.chat-2ZfjoI:has(.membersWrap-3NUR2t) .chatContent-3KubbW {
+    margin-top: 48px;
+}
+.chat-2ZfjoI:has(.profilePanel-2VBkh8) .chatContent-3KubbW {
+    margin-top: 48px;
+}
+.chat-2ZfjoI:has(.searchResultsWrap-5RVOkx) .chatContent-3KubbW {
+    margin-top: 48px;
+}
+/*  */
+.searchHeader-1r_ZSh {
+    height: 48px;
+}
+.content-1jQy2l::before {
+    display: none;
+}
+/* -- */

@@ -1,5 +1,13 @@
-// The CSS to be included in your .theme.css file.
-// Addon @imports should be placed here.
+/**
+ * @name DiscordEnhanced
+ * @author Riddim-GLiTCH
+ * @version 1.0
+ * @description The Vanilla Discord theme with various small tweaks to enhance the experience
+ * @source https://github.com/Riddim-GLiTCH/DiscordEnhanced
+*/
+
+@import url('https://riddim-glitch.github.io/DiscordEnhanced/DiscordEnhanced.css');
+
 /*
 --IMPORTANT NOTE--
 This theme consists entirely of snippets made by other people.
