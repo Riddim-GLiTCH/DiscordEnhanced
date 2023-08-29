@@ -7,4 +7,4 @@ export default {
 		description: "The Vanilla Discord theme with various small tweaks to enhance the experience",
 		source: "https://github.com/Riddim-GLiTCH/DiscordEnhanced"
 	}
-}
+} 
